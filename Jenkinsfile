@@ -12,10 +12,10 @@ pipeline {
 
         // Credentials for accessing the fuzzing service
         CI_FUZZ_API_TOKEN = credentials('CI_FUZZ_API_TOKEN')
-        CICTL = "${WORKSPACE}/cictl-%{CICTL_VERSION}-linux";
+        CICTL = "${WORKSPACE}/cictl-3.2.1-linux";
         CICTL_VERSION = '3.2.1';
         CICTL_SHA256SUM = '0ab873f5e11f79001cacda1b64edb27453fb13acc9475a945f54b61bd331f223';
-        CICTL_URL = 'https://s3.eu-central-1.amazonaws.com/public.code-intelligence.com/cictl/cictl-%{CICTL_VERSION}-linux';
+        CICTL_URL = 'https://s3.eu-central-1.amazonaws.com/public.code-intelligence.com/cictl/cictl-3.2.1-linux';
         FINDINGS_TYPE = 'CRASH';
         TIMEOUT = '900'
   
