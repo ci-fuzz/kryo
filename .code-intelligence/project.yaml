@@ -19,8 +19,6 @@ build_script: ".code-intelligence/build.sh"
 ## Paths to the fuzz tests to execute
 fuzz_tests:
   - .code-intelligence/fuzz_targets/deserialize.java
-  - .code-intelligence/fuzz_targets/API_Fuzz_Test.java
-  - .code-intelligence/fuzz_targets/API_Fuzz_Test2.java
 
 ## Paths to web app fuzz target configs
 web_app_target_configs:
